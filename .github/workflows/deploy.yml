@@ -7,9 +7,18 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v4
+        with:
+          path: .
+
+      - name: Show working directory and files 📂
+        run: |
+          echo "Current dir: $(pwd)"
+          ls -la
+          ls -la src
 
       - name: Install and build 🔧
         run: |
