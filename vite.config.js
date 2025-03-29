@@ -3,6 +3,8 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-react-components/vite';
 
 export default defineConfig(({ command }) => {
   return {
@@ -37,12 +39,19 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
-    plugins: [
-      injectHTML(),
-      FullReload(['./src/**/**.html']),
-      SortCss({
-        sort: 'mobile-first',
-      }),
-    ],
+  plugins: [
+  injectHTML(),
+  FullReload(['./src/**/*.html']),
+  SortCss({ sort: 'mobile-first' }),
+  AutoImport({
+    imports: ['react', 'react-router-dom'],
+    dts: 'src/auto-imports.d.ts',
+  }),
+  Components({
+    dirs: ['src/components'],
+    extensions: ['jsx'],
+    dts: 'src/components.d.ts',
+  }),
+],
   };
 });
