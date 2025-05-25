@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "sass:meta";
-@use "../tokens/tokens" as t;
+@use "../tokens/token" as t;
 
 @function get-token($keys...) {
   $map: t.$tokens;

@@ -1,7 +1,7 @@
 @use "sass:math";
 @use "sass:meta";
 
-@use "../tokens/tokens" as t;
+@use "../tokens/token" as t;
 @use "../functions/get-token" as fn;
 
 /// Функція для видалення одиниць виміру з виразу

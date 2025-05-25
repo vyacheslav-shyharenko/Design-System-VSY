@@ -1,16 +1,16 @@
-@use "./breakpoints" as *;
+@use "./breakpoint" as *;
 
-@use "./colors" as *;
+@use "./color" as *;
 
-@use "./fontsizes" as *;
+@use "./fontsize" as *;
 
-@use "./fontweights" as *;
+@use "./fontweight" as *;
 
-@use "./lineheights" as *;
+@use "./lineheight" as *;
 
 @use "./radius" as *;
 
-@use "./spacings" as *;
+@use "./spacing" as *;
 
 $tokens: (
   color: $COLORS,
