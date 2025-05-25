@@ -1,0 +1,19 @@
+@use "../functions" as fn;
+
+$fonts-sizes: fn.get-token(font-size);
+
+// Перебираємо мапу розмірів
+@each $size, $factor in $fonts-sizes {
+  .fs-#{$size} {
+    font-size: $factor;
+  }
+}
+
+// Перелік варіантів товщини накреслення
+$weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+// Перебираємо список накреслень тексту
+@each $w in $weight {
+  .fw-#{$w} {
+    font-weight: $w;
+  }
+}

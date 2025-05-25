@@ -1,0 +1,43 @@
+@use "../tokens" as t;
+@use "../functions" as fn;
+
+$types: (
+  "m": "margin",
+  "p": "padding",
+);
+
+$sides: (
+  "": "",
+  t: "-top",
+  r: "-right",
+  b: "-bottom",
+  l: "-left",
+);
+
+$spacing: fn.get-token("spacing");
+
+@each $key, $value in $spacing {
+  @each $abbr, $type in $types {
+    @each $side, $suffix in $sides {
+      .#{$abbr}#{$side}-#{$key} {
+        #{$type}#{$suffix}: $value;
+      }
+    }
+
+    // mx, my класи
+    .#{$abbr}x-#{$key} {
+      #{$type}-left: $value;
+      #{$type}-right: $value;
+    }
+
+    .#{$abbr}y-#{$key} {
+      #{$type}-top: $value;
+      #{$type}-bottom: $value;
+    }
+  }
+
+  // gap класи
+  .gap-#{$key} {
+    gap: $value;
+  }
+}

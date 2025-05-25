@@ -1,0 +1,23 @@
+@use "./breakpoints" as *;
+
+@use "./colors" as *;
+
+@use "./fontsizes" as *;
+
+@use "./fontweights" as *;
+
+@use "./lineheights" as *;
+
+@use "./radius" as *;
+
+@use "./spacings" as *;
+
+$tokens: (
+  color: $COLORS,
+  spacing: $SPACINGS,
+  font-size: $FONTSIZES,
+  font-weight: $FONTWEIGHTS,
+  line-height: $LINEHEIGHTS,
+  radius: $RADIUS,
+  breakpoint: $BREAKPOINTS,
+);

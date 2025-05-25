@@ -1,0 +1,23 @@
+@use "../functions" as fn;
+
+$colors: fn.get-token(color);
+
+// Перебираємо мапу кольорів
+@each $name, $color in $colors {
+  // колір тексту
+  .color-#{$name} {
+    color: $color;
+  }
+
+  // колір фону
+  .bg-#{$name} {
+    background-color: $color;
+  }
+
+  // заливка `svg`
+  .fill-#{$name} {
+    svg {
+      color: $color;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "../tokens/tokens" as t;
+
+@function get-token($keys...) {
+  $map: t.$tokens;
+
+  @each $key in $keys {
+    @if type-of($map) != "map" {
+      @error "❌ Current value is not a map at key `#{$key}` in #{inspect($keys)}";
+    }
+
+    @if map.has-key($map, $key) {
+      $map: map.get($map, $key);
+    } @else {
+      @error "❌ Token not found: #{inspect($keys)}";
+    }
+  }
+
+  @return $map;
+}

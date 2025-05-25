@@ -1,0 +1,861 @@
+/***
+    The new CSS reset - version 1.11.3 (last updated 25.08.2024)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Fix mobile Safari increase font-size on landscape mode */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu,
+summary {
+  list-style: none;
+}
+
+/* Firefox: solve issue where nested ordered lists continue numbering from parent (https://bugzilla.mozilla.org/show_bug.cgi?id=1881517) */
+ol {
+  counter-reset: revert;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly.
+ - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+.color-primary {
+  color: #ebd0d0;
+}
+
+.bg-primary {
+  background-color: #ebd0d0;
+}
+
+.fill-primary svg {
+  color: #ebd0d0;
+}
+
+.color-secondary {
+  color: #31d0aa;
+}
+
+.bg-secondary {
+  background-color: #31d0aa;
+}
+
+.fill-secondary svg {
+  color: #31d0aa;
+}
+
+.color-accent {
+  color: #404bbf;
+}
+
+.bg-accent {
+  background-color: #404bbf;
+}
+
+.fill-accent svg {
+  color: #404bbf;
+}
+
+.color-base {
+  color: #434455;
+}
+
+.bg-base {
+  background-color: #434455;
+}
+
+.fill-base svg {
+  color: #434455;
+}
+
+.color-muted {
+  color: #8e8f99;
+}
+
+.bg-muted {
+  background-color: #8e8f99;
+}
+
+.fill-muted svg {
+  color: #8e8f99;
+}
+
+.color-light {
+  color: #ffffff;
+}
+
+.bg-light {
+  background-color: #ffffff;
+}
+
+.fill-light svg {
+  color: #ffffff;
+}
+
+.color-body {
+  color: #ffffff;
+}
+
+.bg-body {
+  background-color: #ffffff;
+}
+
+.fill-body svg {
+  color: #ffffff;
+}
+
+.color-section {
+  color: #f4f4fd;
+}
+
+.bg-section {
+  background-color: #f4f4fd;
+}
+
+.fill-section svg {
+  color: #f4f4fd;
+}
+
+.color-overlay {
+  color: rgba(46, 47, 66, 0.8);
+}
+
+.bg-overlay {
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.fill-overlay svg {
+  color: rgba(46, 47, 66, 0.8);
+}
+
+.color-border-base {
+  color: #e7e9fc;
+}
+
+.bg-border-base {
+  background-color: #e7e9fc;
+}
+
+.fill-border-base svg {
+  color: #e7e9fc;
+}
+
+.color-success {
+  color: #31d0aa;
+}
+
+.bg-success {
+  background-color: #31d0aa;
+}
+
+.fill-success svg {
+  color: #31d0aa;
+}
+
+.color-danger {
+  color: #e74c3c;
+}
+
+.bg-danger {
+  background-color: #e74c3c;
+}
+
+.fill-danger svg {
+  color: #e74c3c;
+}
+
+.color-warning {
+  color: #f39c12;
+}
+
+.bg-warning {
+  background-color: #f39c12;
+}
+
+.fill-warning svg {
+  color: #f39c12;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.gap-0 {
+  gap: 0;
+}
+
+.m-xs {
+  margin: 4px;
+}
+
+.mt-xs {
+  margin-top: 4px;
+}
+
+.mr-xs {
+  margin-right: 4px;
+}
+
+.mb-xs {
+  margin-bottom: 4px;
+}
+
+.ml-xs {
+  margin-left: 4px;
+}
+
+.mx-xs {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.my-xs {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.p-xs {
+  padding: 4px;
+}
+
+.pt-xs {
+  padding-top: 4px;
+}
+
+.pr-xs {
+  padding-right: 4px;
+}
+
+.pb-xs {
+  padding-bottom: 4px;
+}
+
+.pl-xs {
+  padding-left: 4px;
+}
+
+.px-xs {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.py-xs {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.gap-xs {
+  gap: 4px;
+}
+
+.m-sm {
+  margin: 8px;
+}
+
+.mt-sm {
+  margin-top: 8px;
+}
+
+.mr-sm {
+  margin-right: 8px;
+}
+
+.mb-sm {
+  margin-bottom: 8px;
+}
+
+.ml-sm {
+  margin-left: 8px;
+}
+
+.mx-sm {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.my-sm {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.p-sm {
+  padding: 8px;
+}
+
+.pt-sm {
+  padding-top: 8px;
+}
+
+.pr-sm {
+  padding-right: 8px;
+}
+
+.pb-sm {
+  padding-bottom: 8px;
+}
+
+.pl-sm {
+  padding-left: 8px;
+}
+
+.px-sm {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.py-sm {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.gap-sm {
+  gap: 8px;
+}
+
+.m-md {
+  margin: 16px;
+}
+
+.mt-md {
+  margin-top: 16px;
+}
+
+.mr-md {
+  margin-right: 16px;
+}
+
+.mb-md {
+  margin-bottom: 16px;
+}
+
+.ml-md {
+  margin-left: 16px;
+}
+
+.mx-md {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.my-md {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.p-md {
+  padding: 16px;
+}
+
+.pt-md {
+  padding-top: 16px;
+}
+
+.pr-md {
+  padding-right: 16px;
+}
+
+.pb-md {
+  padding-bottom: 16px;
+}
+
+.pl-md {
+  padding-left: 16px;
+}
+
+.px-md {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-md {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.gap-md {
+  gap: 16px;
+}
+
+.m-lg {
+  margin: 32px;
+}
+
+.mt-lg {
+  margin-top: 32px;
+}
+
+.mr-lg {
+  margin-right: 32px;
+}
+
+.mb-lg {
+  margin-bottom: 32px;
+}
+
+.ml-lg {
+  margin-left: 32px;
+}
+
+.mx-lg {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.my-lg {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.p-lg {
+  padding: 32px;
+}
+
+.pt-lg {
+  padding-top: 32px;
+}
+
+.pr-lg {
+  padding-right: 32px;
+}
+
+.pb-lg {
+  padding-bottom: 32px;
+}
+
+.pl-lg {
+  padding-left: 32px;
+}
+
+.px-lg {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.py-lg {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.gap-lg {
+  gap: 32px;
+}
+
+.m-xl {
+  margin: 64px;
+}
+
+.mt-xl {
+  margin-top: 64px;
+}
+
+.mr-xl {
+  margin-right: 64px;
+}
+
+.mb-xl {
+  margin-bottom: 64px;
+}
+
+.ml-xl {
+  margin-left: 64px;
+}
+
+.mx-xl {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.my-xl {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.p-xl {
+  padding: 64px;
+}
+
+.pt-xl {
+  padding-top: 64px;
+}
+
+.pr-xl {
+  padding-right: 64px;
+}
+
+.pb-xl {
+  padding-bottom: 64px;
+}
+
+.pl-xl {
+  padding-left: 64px;
+}
+
+.px-xl {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.py-xl {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.gap-xl {
+  gap: 64px;
+}
+
+.fs-xs {
+  font-size: 12px;
+}
+
+.fs-sm {
+  font-size: 14px;
+}
+
+.fs-base {
+  font-size: 16px;
+}
+
+.fs-md {
+  font-size: 20px;
+}
+
+.fs-lg {
+  font-size: 24px;
+}
+
+.fs-xl {
+  font-size: 32px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.w-1 {
+  width: 8.3333333333%;
+}
+
+.h-1 {
+  height: 8.3333333333%;
+}
+
+.w-2 {
+  width: 16.6666666667%;
+}
+
+.h-2 {
+  height: 16.6666666667%;
+}
+
+.w-3 {
+  width: 25%;
+}
+
+.h-3 {
+  height: 25%;
+}
+
+.w-4 {
+  width: 33.3333333333%;
+}
+
+.h-4 {
+  height: 33.3333333333%;
+}
+
+.w-5 {
+  width: 41.6666666667%;
+}
+
+.h-5 {
+  height: 41.6666666667%;
+}
+
+.w-6 {
+  width: 50%;
+}
+
+.h-6 {
+  height: 50%;
+}
+
+.w-7 {
+  width: 58.3333333333%;
+}
+
+.h-7 {
+  height: 58.3333333333%;
+}
+
+.w-8 {
+  width: 66.6666666667%;
+}
+
+.h-8 {
+  height: 66.6666666667%;
+}
+
+.w-9 {
+  width: 75%;
+}
+
+.h-9 {
+  height: 75%;
+}
+
+.w-10 {
+  width: 83.3333333333%;
+}
+
+.h-10 {
+  height: 83.3333333333%;
+}
+
+.w-11 {
+  width: 91.6666666667%;
+}
+
+.h-11 {
+  height: 91.6666666667%;
+}
+
+.w-12 {
+  width: 100%;
+}
+
+.h-12 {
+  height: 100%;
+}
+
+.w-full {
+  width: 100vw;
+}
+
+.h-full {
+  height: 100vh;
+}
