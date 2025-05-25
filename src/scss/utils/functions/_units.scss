@@ -1,0 +1,25 @@
+@use "sass:math";
+@use "sass:meta";
+
+@use "../tokens/tokens" as t;
+@use "../functions/get-token" as fn;
+
+/// Функція для видалення одиниць виміру з виразу
+@function strip-unit($value) {
+  @if meta.type-of($value) != "number" {
+    @error "#{$value} is not a number.";
+  }
+
+  @if not math.is-unitless($value) {
+    @return math.div($value, 1px);
+  }
+
+  @return $value;
+}
+
+/// Функція для конвертації "px" в "rem"
+@function rem($px-value) {
+  $baseFontSize: fn.get-token(font-size, base);
+
+  @return #{math.div(strip-unit($px-value), strip-unit($baseFontSize))}rem;
+}

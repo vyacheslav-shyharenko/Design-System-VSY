@@ -1,7 +1,15 @@
-@forward "./colors";
+@forward "./color";
 
-@forward "./spacings";
+@forward "./display";
 
-@forward "./fonts";
+@forward "./flex";
 
-@forward "./sizings";
+@forward "./font";
+
+@forward "./position";
+
+@forward "./sizing";
+
+@forward "./spacing";
+
+@forward "./utils";

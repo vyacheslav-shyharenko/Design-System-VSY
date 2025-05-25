@@ -1,1 +1,7 @@
-@use "../utils/functions/functions" as fn;
+@use "../utils/functions" as fn;
+
+@use "../utils/mixins/font" as mx;
+
+$fontWeight: fn.get-token(font-weight);
+
+@include mx.font-face-family("Roboto", $fontWeight);

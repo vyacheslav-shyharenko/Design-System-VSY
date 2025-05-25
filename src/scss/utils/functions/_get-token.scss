@@ -1,11 +1,12 @@
 @use "sass:map";
+@use "sass:meta";
 @use "../tokens/tokens" as t;
 
 @function get-token($keys...) {
   $map: t.$tokens;
 
   @each $key in $keys {
-    @if type-of($map) != "map" {
+    @if meta.type-of($map) != "map" {
       @error "❌ Current value is not a map at key `#{$key}` in #{inspect($keys)}";
     }
 
