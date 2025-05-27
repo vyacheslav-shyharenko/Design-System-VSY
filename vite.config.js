@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import path from "path";
 import FullReload from "vite-plugin-full-reload";
 import viteImagemin from "vite-plugin-imagemin";
+import purgeCss from "vite-plugin-purgecss";
 
 export default defineConfig(({ command }) => ({
   root: "src",
@@ -43,6 +44,10 @@ export default defineConfig(({ command }) => ({
           { name: "cleanupIDs", active: false },
         ],
       },
+    }),
+    purgeCss({
+      content: ["./src/**/*.{html,js,ts}", "./src/index.html"],
+      safelist: [/^observer-delay-/, "visible"],
     }),
   ],
 }));
