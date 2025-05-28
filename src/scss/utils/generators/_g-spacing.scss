@@ -1,6 +1,6 @@
 @use "../tokens/t-token" as t;
 @use "../functions/f-get-token" as gt;
-@use "../functions/f-units" as u;
+@use "../functions/f-units" as un;
 
 $types: (
   "m": "margin",
@@ -21,22 +21,22 @@ $spacing: gt.get-token("spacing");
   @each $abbr, $type in $types {
     @each $side, $suffix in $sides {
       .#{$abbr}#{$side}-#{$key} {
-        #{$type}#{$suffix}: u.rem($value);
+        #{$type}#{$suffix}: un.rem($value);
       }
     }
 
     .#{$abbr}x-#{$key} {
-      #{$type}-left: u.rem($value);
-      #{$type}-right: u.rem($value);
+      #{$type}-left: un.rem($value);
+      #{$type}-right: un.rem($value);
     }
 
     .#{$abbr}y-#{$key} {
-      #{$type}-top: u.rem($value);
-      #{$type}-bottom: u.rem($value);
+      #{$type}-top: un.rem($value);
+      #{$type}-bottom: un.rem($value);
     }
   }
 
   .gap-#{$key} {
-    gap: u.rem($value);
+    gap: un.rem($value);
   }
 }
