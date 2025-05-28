@@ -1,26 +1,19 @@
 @use "../utils" as u;
 
-$base-font-family: u.get(font-family, base);
-$base-font-size: u.get(font-size, base);
-$base-font-weight: u.get(font-weight, regular);
-$base-line-height: u.get(line-height, base);
-$base-min-width: u.get(breakpoint, xs);
-$base-max-width: u.get(breakpoint, wide);
-
 // Встановлюємо базовий розмір для rem
 html {
-  font-size: $base-font-size;
+  font-size: u.$c-font-size-base;
   scroll-behavior: smooth;
 }
 
 // Базові стилі для body
 body {
-  font-family: $base-font-family, sans-serif;
-  font-weight: $base-font-weight;
-  line-height: $base-line-height;
-  color: currentColor;
-  background-color: transparent;
-  @include u.clamp($base-min-width, $base-max-width, 16px, 14px);
+  font-family: u.$c-font-family-base, sans-serif;
+  font-weight: u.$c-font-weight-regular;
+  line-height: u.$c-line-height-base;
+  color: u.$c-color-light;
+  background-color: u.$c-color-dark-primary;
+  @include u.clamp(u.$c-breakpoint-xs, u.$c-breakpoint-wide, 16px, 14px);
 }
 
 button {
