@@ -1,5 +1,5 @@
 @use "../tokens/t-token" as t;
-@use "../functions/f-get-token" as gt;
+@use "../functions/f-get-token" as fn;
 @use "../functions/f-units" as un;
 
 $types: (
@@ -15,7 +15,7 @@ $sides: (
   l: "-left",
 );
 
-$spacing: gt.get-token("spacing");
+$spacing: fn.get("spacing");
 
 @each $key, $value in $spacing {
   @each $abbr, $type in $types {

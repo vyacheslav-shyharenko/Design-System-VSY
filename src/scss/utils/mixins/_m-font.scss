@@ -1,8 +1,8 @@
 @use "../tokens/t-token" as t;
 
-@use "../functions/f-get-token" as gt;
+@use "../functions/f-get-token" as fn;
 
-$map: gt.get-token(font-weight);
+$map: fn.get(font-weight);
 
 // Fonts
 @mixin font-face-family($name, $map, $style: normal) {

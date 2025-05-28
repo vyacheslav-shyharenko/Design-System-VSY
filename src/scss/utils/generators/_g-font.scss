@@ -1,7 +1,7 @@
-@use "../functions/f-get-token" as gt;
+@use "../functions/f-get-token" as fn;
 @use "../functions/f-units" as un;
 
-$font-sizes: gt.get-token("font-size");
+$font-sizes: fn.get("font-size");
 
 // Перебираємо мапу розмірів шрифтів
 @each $size, $value in $font-sizes {

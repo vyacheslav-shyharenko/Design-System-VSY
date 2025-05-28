@@ -2,7 +2,7 @@
 @use "sass:meta";
 @use "../tokens/t-token" as t;
 
-@function get-token($keys...) {
+@function get($keys...) {
   $map: t.$tokens;
 
   @each $key in $keys {

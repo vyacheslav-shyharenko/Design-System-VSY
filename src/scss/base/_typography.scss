@@ -1,7 +1,9 @@
 @use "../utils" as u;
 
 // Отримуємо мапу font-weight з токенів
-$fontWeight: u.get-token(font-weight);
+$font-weight: u.get(font-weight);
+$font-main: u.get(font-family, primary);
+$font-second: u.get(font-family, secondary);
 
 // Генеруємо @font-face для всіх накреслень
-@include u.font-face-family("Roboto", $fontWeight);
+@include u.font-face-family($font-main, $font-weight);

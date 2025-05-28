@@ -1,9 +1,9 @@
 @use "sass:map";
 
 @use "../tokens/t-token" as t;
-@use "../functions/f-get-token" as gt;
+@use "../functions/f-get-token" as fn;
 
-$breakpoints: gt.get-token(breakpoint);
+$breakpoints: fn.get(breakpoint);
 
 @mixin mq($bp: sm, $type: min, $is-retina: false) {
   @if map.has-key($breakpoints, $bp) {

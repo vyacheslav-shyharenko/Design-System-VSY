@@ -2,6 +2,10 @@
 
 @use "./t-color" as *;
 
+@use "./t-effects" as *;
+
+@use "./t-font-family" as *;
+
 @use "./t-font-size" as *;
 
 @use "./t-font-weight" as *;
@@ -13,11 +17,12 @@
 @use "./t-spacing" as *;
 
 $tokens: (
-  color: $COLORS,
-  spacing: $SPACINGS,
+  breakpoint: $BREAKPOINTS,
+  font-family: $FONTFAMILY,
   font-size: $FONTSIZES,
   font-weight: $FONTWEIGHTS,
   line-height: $LINEHEIGHTS,
+  color: $COLORS,
+  spacing: $SPACINGS,
   radius: $RADIUS,
-  breakpoint: $BREAKPOINTS,
 );

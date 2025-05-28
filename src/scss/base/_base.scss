@@ -2,15 +2,15 @@
 
 // Встановлюємо базовий розмір для rem
 html {
-  font-size: u.get-token("font-size", "base");
+  font-size: u.get("font-size", "base");
   scroll-behavior: smooth;
 }
 
 // Базові стилі для body
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: u.get-token(font-weight, regular);
-  line-height: u.get-token(line-height, base);
+  font-weight: u.get(font-weight, regular);
+  line-height: u.get(line-height, base);
   color: currentColor;
   background-color: transparent;
 }
