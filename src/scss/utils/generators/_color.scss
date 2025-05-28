@@ -2,22 +2,28 @@
 
 $colors: fn.get-token(color);
 
-// Перебираємо мапу кольорів
-@each $name, $color in $colors {
-  // колір тексту
-  .color-#{$name} {
-    color: $color;
+// :root — CSS змінні
+:root {
+  @each $name, $value in $colors {
+    --#{$name}: #{$value};
   }
+}
 
-  // колір фону
+// Утилітні класи
+@each $name, $value in $colors {
   .bg-#{$name} {
-    background-color: $color;
+    background-color: $value;
   }
 
-  // заливка `svg`
-  .fill-#{$name} {
-    svg {
-      color: $color;
-    }
+  .color-#{$name} {
+    color: $value;
+  }
+
+  .border-#{$name} {
+    border-color: $value;
+  }
+
+  .fill-#{$name} svg {
+    fill: $value;
   }
 }
