@@ -9,7 +9,7 @@ $l-width-wide: u.get(breakpoint, wide);
 .layout {
   min-width: $l-width-mobile;
 
-  @include u.respond-to(wide) {
-    min-width: $l-width-desktop;
+  @include u.respond-to(desktop) {
+    display: grid;
   }
 }

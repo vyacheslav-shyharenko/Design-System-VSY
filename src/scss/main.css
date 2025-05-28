@@ -1429,8 +1429,8 @@ summary {
 .layout {
   min-width: 480px;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .layout {
-    min-width: 1024px;
+    display: grid;
   }
 }
