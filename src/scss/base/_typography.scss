@@ -1,9 +1,6 @@
 @use "../utils" as u;
 
-// Отримуємо мапу font-weight з токенів
-$font-weight: u.get(font-weight);
-$font-main: u.get(font-family, primary);
-$font-second: u.get(font-family, secondary);
+$typography-font-weight: u.get(font-weight);
+$typography-font-family: u.get(font-family, base);
 
-// Генеруємо @font-face для всіх накреслень
-@include u.font-face-family($font-main, $font-weight);
+@include u.font-face-family($typography-font-family, $typography-font-weight);

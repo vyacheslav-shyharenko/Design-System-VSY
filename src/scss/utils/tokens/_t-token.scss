@@ -1,28 +1,28 @@
-@use "./t-breakpoint" as *;
+@use "./t-breakpoint" as bp;
 
-@use "./t-color" as *;
+@use "./t-color" as c;
 
-@use "./t-effects" as *;
+@use "./t-effects" as ef;
 
-@use "./t-font-family" as *;
+@use "./t-font-family" as ff;
 
-@use "./t-font-size" as *;
+@use "./t-font-size" as fs;
 
-@use "./t-font-weight" as *;
+@use "./t-font-weight" as fw;
 
-@use "./t-line-height" as *;
+@use "./t-line-height" as lh;
 
-@use "./t-radius" as *;
+@use "./t-radius" as r;
 
-@use "./t-spacing" as *;
+@use "./t-spacing" as sp;
 
 $tokens: (
-  breakpoint: $BREAKPOINTS,
-  font-family: $FONTFAMILY,
-  font-size: $FONTSIZES,
-  font-weight: $FONTWEIGHTS,
-  line-height: $LINEHEIGHTS,
-  color: $COLORS,
-  spacing: $SPACINGS,
-  radius: $RADIUS,
+  breakpoint: bp.$BREAKPOINTS,
+  color: c.$COLORS,
+  font-family: ff.$FONTFAMILY,
+  font-size: fs.$FONTSIZES,
+  font-weight: fw.$FONTWEIGHTS,
+  line-height: lh.$LINEHEIGHTS,
+  radius: r.$RADIUS,
+  spacing: sp.$SPACINGS,
 );
