@@ -1431,6 +1431,6 @@ summary {
 }
 @media only screen and (min-width: 1440px) {
   .layout {
-    min-width: 1440px;
+    min-width: 1024px;
   }
 }
