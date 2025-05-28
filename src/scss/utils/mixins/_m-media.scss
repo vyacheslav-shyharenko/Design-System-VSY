@@ -1,35 +1,28 @@
 @use "sass:map";
+
 @use "../tokens/t-token" as t;
 @use "../functions/f-get-token" as gt;
 
-/// Media query mixin with optional retina support
-/// @param $breakpoint-name - ключ із $breakpoints map
-/// @param $type - min або max (тип @media)
-/// @param $retina - true, якщо потрібна підтримка Retina
-@mixin media($breakpoint-name, $type: min, $retina: false) {
-  // Отримуємо значення брейкпоінта через функцію
-  $value: gt.get-token(breakpoint, $breakpoint-name);
+$breakpoints: gt.get-token(breakpoint);
 
-  // Перевірка
-  @if $value == null {
-    @error "🚫 Breakpoint '#{$breakpoint-name}' not found via get-token().";
-  }
+@mixin mq($bp: sm, $type: min, $is-retina: false) {
+  @if map.has-key($breakpoints, $bp) {
+    $width: map.get($breakpoints, $bp);
 
-  @if $type == max {
-    $value: $value - 0.02px;
-  }
-
-  $media: "(#{$type}-width: #{$value})";
-
-  @if $retina {
-    @media only screen and #{$media} and (-webkit-min-device-pixel-ratio: 2),
-           only screen and #{$media} and (min-resolution: 192dpi),
-           only screen and #{$media} and (min-resolution: 2dppx) {
-      @content;
+    @if $type == max {
+      $width: $width - 0.02px;
     }
-  } @else {
-    @media only screen and #{$media} {
-      @content;
+
+    @media only screen and (#{$type}-width: #{$width}) {
+      @if $is-retina {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          @content;
+        }
+      } @else {
+        @content;
+      }
     }
   }
 }
