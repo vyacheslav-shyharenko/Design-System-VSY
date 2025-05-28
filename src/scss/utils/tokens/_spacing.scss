@@ -1,8 +1,13 @@
 $SPACINGS: (
-  0: 0,
+  none: 0px,
+  xxs: 2px,
   xs: 4px,
   sm: 8px,
   md: 16px,
-  lg: 32px,
-  xl: 64px,
+  lg: 24px,
+  xl: 32px,
+  xxl: 48px,
+  section: 80px,
+  container-min: 16px,
+  container-max: 48px,
 );

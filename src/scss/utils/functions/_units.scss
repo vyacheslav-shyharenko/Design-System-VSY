@@ -1,10 +1,8 @@
+// _units.scss
 @use "sass:math";
 @use "sass:meta";
+@use "../functions/get-token" as gt;
 
-@use "../tokens/token" as t;
-@use "../functions/get-token" as fn;
-
-/// Функція для видалення одиниць виміру з виразу
 @function strip-unit($value) {
   @if meta.type-of($value) != "number" {
     @error "#{$value} is not a number.";
@@ -17,9 +15,10 @@
   @return $value;
 }
 
-/// Функція для конвертації "px" в "rem"
-@function rem($px-value) {
-  $baseFontSize: fn.get-token(font-size, base);
+@function rem($px-value, $baseFontSize: null) {
+  @if $baseFontSize == null {
+    $baseFontSize: gt.get-token("font-size", "base");
+  }
 
   @return #{math.div(strip-unit($px-value), strip-unit($baseFontSize))}rem;
 }

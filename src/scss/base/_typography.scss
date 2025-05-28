@@ -1,7 +1,24 @@
-@use "../utils/functions" as fn;
+@use "../utils/functions/get-token" as gt;
 
 @use "../utils/mixins/font" as mx;
 
-$fontWeight: fn.get-token(font-weight);
+// Отримуємо мапу font-weight з токенів
+$fontWeight: gt.get-token(font-weight);
 
+// Генеруємо @font-face для всіх накреслень
 @include mx.font-face-family("Roboto", $fontWeight);
+
+// Встановлюємо базовий розмір для rem
+html {
+  font-size: gt.get-token("font-size", "base");
+  scroll-behavior: smooth;
+}
+
+// Базові стилі для body
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: gt.get-token(font-weight, regular);
+  line-height: gt.get-token(line-height, base);
+  color: currentColor;
+  background-color: transparent;
+}

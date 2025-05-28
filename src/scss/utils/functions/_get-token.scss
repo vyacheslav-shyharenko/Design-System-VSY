@@ -1,3 +1,4 @@
+// _get-token.scss
 @use "sass:map";
 @use "sass:meta";
 @use "../tokens/token" as t;
@@ -6,14 +7,16 @@
   $map: t.$tokens;
 
   @each $key in $keys {
+    $key: "#{"" + $key}";
+
     @if meta.type-of($map) != "map" {
-      @error "❌ Current value is not a map at key `#{$key}` in #{inspect($keys)}";
+      @error "❌ Not a map at key `#{$key}` in #{inspect($keys)}";
     }
 
     @if map.has-key($map, $key) {
       $map: map.get($map, $key);
     } @else {
-      @error "❌ Token not found: #{inspect($keys)}";
+      @error "❌ Token not found: `#{$key}` in #{inspect($keys)}";
     }
   }
 
