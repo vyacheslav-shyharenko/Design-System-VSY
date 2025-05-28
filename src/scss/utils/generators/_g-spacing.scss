@@ -1,7 +1,6 @@
-@use "../tokens" as t;
-@use "../functions/get-token" as gt;
-
-@use "../functions/units" as u;
+@use "../tokens/t-token" as t;
+@use "../functions/f-get-token" as gt;
+@use "../functions/f-units" as u;
 
 $types: (
   "m": "margin",

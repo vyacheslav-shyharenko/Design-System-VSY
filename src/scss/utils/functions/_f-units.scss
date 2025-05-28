@@ -1,7 +1,6 @@
-// _units.scss
 @use "sass:math";
 @use "sass:meta";
-@use "../functions/get-token" as gt;
+@use "../functions/f-get-token" as gt;
 
 @function strip-unit($value) {
   @if meta.type-of($value) != "number" {

@@ -1,4 +1,4 @@
-@use "../mixins" as mx;
+@use "../mixins/m-flex" as mx;
 
 // Властивість justify-content
 $justify-values: start, end, center, stretch, between, around, evenly;

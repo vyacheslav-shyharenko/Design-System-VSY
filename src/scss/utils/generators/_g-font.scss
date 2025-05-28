@@ -1,5 +1,5 @@
-@use "../functions/get-token" as gt;
-@use "../functions/units" as u;
+@use "../functions/f-get-token" as gt;
+@use "../functions/f-units" as u;
 
 $font-sizes: gt.get-token("font-size");
 

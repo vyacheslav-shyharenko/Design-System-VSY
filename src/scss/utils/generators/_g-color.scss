@@ -1,6 +1,6 @@
-@use "../functions" as fn;
+@use "../functions/f-get-token" as gt;
 
-$colors: fn.get-token(color);
+$colors: gt.get-token(color);
 
 // :root — CSS змінні
 :root {

@@ -1,6 +1,6 @@
-@use "../utils/functions/get-token" as gt;
+@use "../utils/functions/f-get-token" as gt;
 
-@use "../utils/mixins/font" as mx;
+@use "../utils/mixins/m-font" as mx;
 
 // Отримуємо мапу font-weight з токенів
 $fontWeight: gt.get-token(font-weight);

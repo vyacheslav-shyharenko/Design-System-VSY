@@ -1,15 +1,3 @@
-// Міксин для керування властивостями флекс контейнера
-// Використовується у файлі _flex.scss
-@mixin flex-center($is-column: false) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @if $is-column {
-    flex-direction: column;
-  }
-}
-
 // Міксин для стилізації плейсхолдера інпута
 @mixin placeholder {
   &::placeholder {
