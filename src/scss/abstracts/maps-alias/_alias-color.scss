@@ -1,60 +1,60 @@
-$ALIAS-COLORS: (
+$ALIAS-COLOR: (
   // TEXT
-  "text-main": "1",
-  "text-secondary": "2",
-  "text-tertiary": "3",
-  "text-inverted": "4",
-  "text-link": "5",
-  "text-link-hover": "6",
-  "text-disabled": "7",
-  "text-danger": "8",
+  text-main: text-main,
+  text-secondary: text-secondary,
+  text-tertiary: text-tertiary,
+  text-inverted: text-inverted,
+  text-link: text-link,
+  text-link-hover: text-link-hover,
+  text-disabled: text-disabled,
+  text-danger: text-danger,
 
   // BACKGROUND
-  "bg-page": "4",
-  "bg-subtle": "9",
-  "bg-muted": "10",
-  "bg-inverted": "1",
-  "bg-overlay": "11",
-  "bg-hover": "12",
-  "bg-selected": "13",
-  "bg-disabled": "9",
+  bg-page: bg-page,
+  bg-subtle: bg-subtle,
+  bg-muted: bg-muted,
+  bg-inverted: bg-inverted,
+  bg-overlay: bg-overlay,
+  bg-hover: bg-hover,
+  bg-selected: bg-selected,
+  bg-disabled: bg-disabled,
 
   // BORDER
-  "border-default": "14",
-  "border-subtle": "15",
-  "border-strong": "3",
-  "border-focus": "16",
-  "border-danger": "17",
+  border-default: border-default,
+  border-subtle: border-subtle,
+  border-strong: border-strong,
+  border-focus: border-focus,
+  border-danger: border-danger,
 
   // BUTTON
-  "button-primary-bg": "5",
-  "button-primary-text": "4",
-  "button-primary-hover": "6",
+  button-primary-bg: button-primary-bg,
+  button-primary-text: button-primary-text,
+  button-primary-hover: button-primary-hover,
 
-  "button-secondary-bg": "10",
-  "button-secondary-text": "1",
-  "button-secondary-hover": "12",
+  button-secondary-bg: button-secondary-bg,
+  button-secondary-text: button-secondary-text,
+  button-secondary-hover: button-secondary-hover,
 
-  "button-danger-bg": "8",
-  "button-danger-text": "4",
-  "button-danger-hover": "18",
+  button-danger-bg: button-danger-bg,
+  button-danger-text: button-danger-text,
+  button-danger-hover: button-danger-hover,
 
   // STATUS
-  "status-success-bg": "19",
-  "status-success-border": "20",
-  "status-success-text": "21",
+  status-success-bg: status-success-bg,
+  status-success-border: status-success-border,
+  status-success-text: status-success-text,
 
-  "status-warning-bg": "22",
-  "status-warning-border": "23",
-  "status-warning-text": "24",
+  status-warning-bg: status-warning-bg,
+  status-warning-border: status-warning-border,
+  status-warning-text: status-warning-text,
 
-  "status-danger-bg": "25",
-  "status-danger-border": "26",
-  "status-danger-text": "27",
+  status-danger-bg: status-danger-bg,
+  status-danger-border: status-danger-border,
+  status-danger-text: status-danger-text,
 
   // BRAND
-  "brand-main": "5",
-  "brand-accent": "28",
-  "brand-dark": "1",
-  "brand-light": "9"
+  brand-main: brand-main,
+  brand-accent: brand-accent,
+  brand-dark: brand-dark,
+  brand-light: brand-light
 );

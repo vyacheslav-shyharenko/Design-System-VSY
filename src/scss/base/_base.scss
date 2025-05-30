@@ -9,6 +9,8 @@ html {
 body {
   font-family: a.get-token(fontFamily, base), sans-serif;
   background-color: a.get(color, bg-page);
+  color: a.get(color, text-main);
+
   @include a.clamp(
     a.get-token(breakpoint, xs),
     a.get-token(breakpoint, wide),

@@ -1,57 +1,60 @@
-$COLORS: (
-  "1": #111827,
-  // gray-900
-  "2": #374151,
-  // gray-700
-  "3": #6b7280,
-  // gray-500
-  "4": #444343,
-  // white
-  "5": #2563eb,
-  // blue-600
-  "6": #1d4ed8,
-  // blue-700
-  "7": #9ca3af,
-  // gray-400
-  "8": #dc2626,
-  // red-600
-  "9": #f9fafb,
-  // gray-50
-  "10": #f3f4f6,
-  // gray-100
-  "11": rgba(0, 0, 0, 0.4),
-  // overlay
-  "12": #e5e7eb,
-  // gray-200
-  "13": #eff6ff,
-  // blue-50
-  "14": #d1d5db,
-  // gray-300
-  "15": #e5e7eb,
-  // gray-200
-  "16": #3b82f6,
-  // blue-500
-  "17": #ef4444,
-  // red-500
-  "18": #b91c1c,
-  // red-700
-  "19": #dcfce7,
-  // green-100
-  "20": #4ade80,
-  // green-400
-  "21": #15803d,
-  // green-700
-  "22": #fef9c3,
-  // yellow-100
-  "23": #facc15,
-  // yellow-400
-  "24": #a16207,
-  // yellow-700
-  "25": #fee2e2,
-  // red-100
-  "26": #f87171,
-  // red-400
-  "27": #b91c1c,
-  // red-700
-  "28": #ec4899 // pink-500,,,,
+$COLOR: (
+  // TEXT
+  "text-main": #ffffff,
+  "text-secondary": #374151,
+  "text-tertiary": #6b7280,
+  "text-inverted": #ffffff,
+  "text-link": #2563eb,
+  "text-link-hover": #1d4ed8,
+  "text-disabled": #9ca3af,
+  "text-danger": #dc2626,
+
+  // BACKGROUND
+  "bg-page": #e11111,
+  "bg-subtle": #f9fafb,
+  "bg-muted": #f3f4f6,
+  "bg-inverted": #111827,
+  "bg-overlay": rgba(0, 0, 0, 0.4),
+  "bg-hover": #e5e7eb,
+  "bg-selected": #eff6ff,
+  "bg-disabled": #f9fafb,
+
+  // BORDER
+  "border-default": #d1d5db,
+  "border-subtle": #e5e7eb,
+  "border-strong": #6b7280,
+  "border-focus": #3b82f6,
+  "border-danger": #ef4444,
+
+  // BUTTON
+  "button-primary-bg": #2563eb,
+  "button-primary-text": #ffffff,
+  "button-primary-hover": #1d4ed8,
+
+  "button-secondary-bg": #f3f4f6,
+  "button-secondary-text": #111827,
+  "button-secondary-hover": #e5e7eb,
+
+  "button-danger-bg": #dc2626,
+  "button-danger-text": #ffffff,
+  "button-danger-hover": #b91c1c,
+
+  // STATUS
+  "status-success-bg": #dcfce7,
+  "status-success-border": #4ade80,
+  "status-success-text": #15803d,
+
+  "status-warning-bg": #fef9c3,
+  "status-warning-border": #facc15,
+  "status-warning-text": #a16207,
+
+  "status-danger-bg": #fee2e2,
+  "status-danger-border": #f87171,
+  "status-danger-text": #b91c1c,
+
+  // BRAND
+  "brand-main": #2563eb,
+  "brand-accent": #ec4899,
+  "brand-dark": #111827,
+  "brand-light": #f9fafb
 );
