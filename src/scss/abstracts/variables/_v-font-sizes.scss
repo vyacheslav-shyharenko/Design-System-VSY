@@ -1,0 +1,8 @@
+@use "../functions/f-get-token" as fn;
+
+$c-font-size-xs: fn.get-token(fontSize, xs);
+$c-font-size-sm: fn.get-token(fontSize, sm);
+$c-font-size-base: fn.get-token(fontSize, base);
+$c-font-size-md: fn.get-token(fontSize, md);
+$c-font-size-lg: fn.get-token(fontSize, lg);
+$c-font-size-xl: fn.get-token(fontSize, xl);

@@ -1,60 +1,60 @@
 $COLOR: (
   // TEXT
-  "text-main": #ffffff,
-  "text-secondary": #374151,
-  "text-tertiary": #6b7280,
-  "text-inverted": #ffffff,
-  "text-link": #2563eb,
-  "text-link-hover": #1d4ed8,
-  "text-disabled": #9ca3af,
-  "text-danger": #dc2626,
+  text-main: #f40101,
+  text-secondary: #374151,
+  text-tertiary: #6b7280,
+  text-inverted: #ffffff,
+  text-link: #2563eb,
+  text-link-hover: #1d4ed8,
+  text-disabled: #9ca3af,
+  text-danger: #dc2626,
 
   // BACKGROUND
-  "bg-page": #e11111,
-  "bg-subtle": #f9fafb,
-  "bg-muted": #f3f4f6,
-  "bg-inverted": #111827,
-  "bg-overlay": rgba(0, 0, 0, 0.4),
-  "bg-hover": #e5e7eb,
-  "bg-selected": #eff6ff,
-  "bg-disabled": #f9fafb,
+  bg-main: #000000,
+  bg-subtle: #f9fafb,
+  bg-muted: #f3f4f6,
+  bg-inverted: #111827,
+  bg-overlay: rgba(0, 0, 0, 0.4),
+  bg-hover: #e5e7eb,
+  bg-selected: #eff6ff,
+  bg-disabled: #f9fafb,
 
   // BORDER
-  "border-default": #d1d5db,
-  "border-subtle": #e5e7eb,
-  "border-strong": #6b7280,
-  "border-focus": #3b82f6,
-  "border-danger": #ef4444,
+  border-default: #d1d5db,
+  border-subtle: #e5e7eb,
+  border-strong: #6b7280,
+  border-focus: #3b82f6,
+  border-danger: #ef4444,
 
   // BUTTON
-  "button-primary-bg": #2563eb,
-  "button-primary-text": #ffffff,
-  "button-primary-hover": #1d4ed8,
+  button-primary-bg: #2563eb,
+  button-primary-text: #ffffff,
+  button-primary-hover: #1d4ed8,
 
-  "button-secondary-bg": #f3f4f6,
-  "button-secondary-text": #111827,
-  "button-secondary-hover": #e5e7eb,
+  button-secondary-bg: #f3f4f6,
+  button-secondary-text: #111827,
+  button-secondary-hover: #e5e7eb,
 
-  "button-danger-bg": #dc2626,
-  "button-danger-text": #ffffff,
-  "button-danger-hover": #b91c1c,
+  button-danger-bg: #dc2626,
+  button-danger-text: #ffffff,
+  button-danger-hover: #b91c1c,
 
   // STATUS
-  "status-success-bg": #dcfce7,
-  "status-success-border": #4ade80,
-  "status-success-text": #15803d,
+  status-success-bg: #dcfce7,
+  status-success-border: #4ade80,
+  status-success-text: #15803d,
 
-  "status-warning-bg": #fef9c3,
-  "status-warning-border": #facc15,
-  "status-warning-text": #a16207,
+  status-warning-bg: #fef9c3,
+  status-warning-border: #facc15,
+  status-warning-text: #a16207,
 
-  "status-danger-bg": #fee2e2,
-  "status-danger-border": #f87171,
-  "status-danger-text": #b91c1c,
+  status-danger-bg: #fee2e2,
+  status-danger-border: #f87171,
+  status-danger-text: #b91c1c,
 
   // BRAND
-  "brand-main": #2563eb,
-  "brand-accent": #ec4899,
-  "brand-dark": #111827,
-  "brand-light": #f9fafb
+  brand-main: #2563eb,
+  brand-accent: #ec4899,
+  brand-dark: #111827,
+  brand-light: #f9fafb
 );

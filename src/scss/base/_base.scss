@@ -8,8 +8,8 @@ html {
 // Базові стилі для body
 body {
   font-family: a.get-token(fontFamily, base), sans-serif;
-  background-color: a.get(color, bg-page);
-  color: a.get(color, text-main);
+  background-color: a.get(color, bg-main);
+  color: a.$text-main;
 
   @include a.clamp(
     a.get-token(breakpoint, xs),

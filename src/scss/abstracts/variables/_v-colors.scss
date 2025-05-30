@@ -1,0 +1,3 @@
+@use "../functions/f-get-token" as fn;
+
+$text-main: fn.get-token(color, text-main);

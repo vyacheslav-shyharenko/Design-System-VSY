@@ -1,0 +1,5 @@
+@use "../functions/f-get-token" as fn;
+
+$c-font-family-base: fn.get-token(fontFamily, base);
+$c-font-family-secondary: fn.get-token(fontFamily, secondary);
+$c-font-family-accent: fn.get-token(fontFamily, accent);

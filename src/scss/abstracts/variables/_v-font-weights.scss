@@ -1,0 +1,5 @@
+@use "../functions/f-get-token" as fn;
+
+$c-font-weight-regular: fn.get-token(fontWeight, regular);
+$c-font-weight-medium: fn.get-token(fontWeight, medium);
+$c-font-weight-bold: fn.get-token(fontWeight, bold);
