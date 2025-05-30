@@ -1,21 +1,21 @@
-@use "../abstracts" as a;
+@use "../abstracts" as var;
 
 html {
-  // font-size: get(font-size, base);
+  font-size: var.$font-size-base;
   scroll-behavior: smooth;
 }
 
 // Базові стилі для body
 body {
-  font-family: a.get-token(fontFamily, base), sans-serif;
-  background-color: a.get(color, bg-main);
-  color: a.$text-main;
+  font-family: var.$font-family-base, sans-serif;
+  background-color: var.$bg-main;
+  color: var.$text-main;
 
-  @include a.clamp(
-    a.get-token(breakpoint, xs),
-    a.get-token(breakpoint, wide),
+  @include var.clamp(
+    var.get-token(breakpoint, xs),
+    var.get-token(breakpoint, wide),
     16px,
-    14px
+    16px
   );
 }
 

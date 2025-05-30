@@ -17,7 +17,7 @@
 
 @function rem($px-value, $baseFontSize: null) {
   @if $baseFontSize == null {
-    $baseFontSize: gt.get-token(fontSize, base);
+    $baseFontSize: gt.get-token(font-size, base);
   }
 
   @return #{math.div(remove-unit($px-value), remove-unit($baseFontSize))}rem;

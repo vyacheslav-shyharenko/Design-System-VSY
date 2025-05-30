@@ -1,6 +1,6 @@
 @use "../abstracts" as a;
 
-$typography-font-weight: a.get-token(fontWeight);
-$typography-font-family: a.get-token(fontFamily, base);
+$typography-font-weight: a.get-token(font-weight);
+$typography-font-family: a.get-token(font-family, base);
 
 @include a.font-face-family($typography-font-family, $typography-font-weight);

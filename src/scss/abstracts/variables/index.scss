@@ -1,17 +1,17 @@
-@forward "./v-breakpoints";
+@forward "./v-breakpoint";
 
-@forward "./v-colors";
+@forward "./v-color";
 
-@forward "./v-effects";
+@forward "./v-font-size";
 
-@forward "./v-font-sizes";
-
-@forward "./v-font-weights";
+@forward "./v-font-weight";
 
 @forward "./v-fonts-family";
 
-@forward "./v-line-heights";
+@forward "./v-line-height";
 
 @forward "./v-radius";
 
-@forward "./v-spacings";
+@forward "./v-shadow";
+
+@forward "./v-spacing";

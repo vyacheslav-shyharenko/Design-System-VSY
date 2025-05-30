@@ -1,7 +1,0 @@
-@use "../functions/f-get-token" as fn;
-
-$c-breakpoint-xs: fn.get-token(breakpoint, xs);
-$c-breakpoint-mobile: fn.get-token(breakpoint, mobile);
-$c-breakpoint-tablet: fn.get-token(breakpoint, tablet);
-$c-breakpoint-desktop: fn.get-token(breakpoint, desktop);
-$c-breakpoint-wide: fn.get-token(breakpoint, wide);

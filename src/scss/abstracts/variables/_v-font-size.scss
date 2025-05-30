@@ -1,0 +1,8 @@
+@use "../functions/f-get-var" as fn;
+
+$font-size-base: fn.get(font-size, base);
+// $font-size-sm: fn.get-token(font-size, sm);
+// $font-size-base: fn.get-token(font-size, base);
+// $font-size-md: fn.get-token(font-size, md);
+// $font-size-lg: fn.get-token(font-size, lg);
+// $font-size-xl: fn.get-token(font-size, xl);

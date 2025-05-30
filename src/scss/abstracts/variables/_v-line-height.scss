@@ -1,0 +1,6 @@
+@use "../functions/f-get-token" as fn;
+
+$c-line-height-tight: fn.get-token(line-height, tight);
+$c-line-height-base: fn.get-token(line-height, base);
+$c-line-height-relaxed: fn.get-token(line-height, relaxed);
+$c-line-height-loose: fn.get-token(line-height, loose);
