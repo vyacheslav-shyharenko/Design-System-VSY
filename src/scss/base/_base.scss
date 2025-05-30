@@ -1,19 +1,20 @@
-@use "../utils" as u;
+@use "../abstracts" as a;
 
-// Встановлюємо базовий розмір для rem
 html {
-  font-size: u.$c-font-size-base;
+  // font-size: get(font-size, base);
   scroll-behavior: smooth;
 }
 
 // Базові стилі для body
 body {
-  font-family: u.$c-font-family-base, sans-serif;
-  font-weight: u.$c-font-weight-regular;
-  line-height: u.$c-line-height-base;
-  color: u.$c-color-light;
-  background-color: u.$c-color-dark-primary;
-  @include u.clamp(u.$c-breakpoint-xs, u.$c-breakpoint-wide, 16px, 14px);
+  font-family: a.get-token(fontFamily, base), sans-serif;
+  background-color: a.get(color, bg-page);
+  @include a.clamp(
+    a.get-token(breakpoint, xs),
+    a.get-token(breakpoint, wide),
+    16px,
+    14px
+  );
 }
 
 button {
