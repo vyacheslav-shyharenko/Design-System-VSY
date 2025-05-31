@@ -1,5 +1,5 @@
 @use "../../functions/f-get-var" as css;
 
-// $font-family-base: fn.get(font-family, base);
-// $font-family-secondary: fn.get(font-family, secondary);
-// $font-family-accent: fn.get(font-family, accent);
+$var-ff-primary: css.get(font-family, primary);
+$var-ff-secondary: css.get(font-family, secondary);
+$var-ff-accent: css.get(font-family, accent);

@@ -1,8 +1,10 @@
 @use "../../functions/f-get-token" as tok;
 
+$bp-map: tok.get-token(breakpoint);
+
 // Values
-$breakpoint-xs: tok.get-token(breakpoint, xs);
-$breakpoint-mobile: tok.get-token(breakpoint, mobile);
-$breakpoint-tablet: tok.get-token(breakpoint, tablet);
-$breakpoint-desktop: tok.get-token(breakpoint, desktop);
-$breakpoint-wide: tok.get-token(breakpoint, wide);
+$get-bp-xs: tok.get-token(breakpoint, xs);
+$get-bp-mobile: tok.get-token(breakpoint, mobile);
+$get-bp-tablet: tok.get-token(breakpoint, tablet);
+$get-bp-desktop: tok.get-token(breakpoint, desktop);
+$get-bp-wide: tok.get-token(breakpoint, wide);

@@ -238,148 +238,148 @@
   fill: #ef4444;
 }
 
-.bg-button-primary-bg {
+.bg-button-bg-primary {
   background-color: #2563eb;
 }
 
-.color-button-primary-bg {
+.color-button-bg-primary {
   color: #2563eb;
 }
 
-.border-button-primary-bg {
+.border-button-bg-primary {
   border-color: #2563eb;
 }
 
-.fill-button-primary-bg svg {
+.fill-button-bg-primary svg {
   fill: #2563eb;
 }
 
-.bg-button-primary-text {
+.bg-button-text-primary {
   background-color: #ffffff;
 }
 
-.color-button-primary-text {
+.color-button-text-primary {
   color: #ffffff;
 }
 
-.border-button-primary-text {
+.border-button-text-primary {
   border-color: #ffffff;
 }
 
-.fill-button-primary-text svg {
+.fill-button-text-primary svg {
   fill: #ffffff;
 }
 
-.bg-button-primary-hover {
+.bg-button-hover-primary {
   background-color: #1d4ed8;
 }
 
-.color-button-primary-hover {
+.color-button-hover-primary {
   color: #1d4ed8;
 }
 
-.border-button-primary-hover {
+.border-button-hover-primary {
   border-color: #1d4ed8;
 }
 
-.fill-button-primary-hover svg {
+.fill-button-hover-primary svg {
   fill: #1d4ed8;
 }
 
-.bg-button-secondary-bg {
-  background-color: #f3f4f6;
+.bg-button-bg-secondary {
+  background-color: #2563eb;
 }
 
-.color-button-secondary-bg {
-  color: #f3f4f6;
+.color-button-bg-secondary {
+  color: #2563eb;
 }
 
-.border-button-secondary-bg {
-  border-color: #f3f4f6;
+.border-button-bg-secondary {
+  border-color: #2563eb;
 }
 
-.fill-button-secondary-bg svg {
-  fill: #f3f4f6;
+.fill-button-bg-secondary svg {
+  fill: #2563eb;
 }
 
-.bg-button-secondary-text {
-  background-color: #111827;
-}
-
-.color-button-secondary-text {
-  color: #111827;
-}
-
-.border-button-secondary-text {
-  border-color: #111827;
-}
-
-.fill-button-secondary-text svg {
-  fill: #111827;
-}
-
-.bg-button-secondary-hover {
-  background-color: #e5e7eb;
-}
-
-.color-button-secondary-hover {
-  color: #e5e7eb;
-}
-
-.border-button-secondary-hover {
-  border-color: #e5e7eb;
-}
-
-.fill-button-secondary-hover svg {
-  fill: #e5e7eb;
-}
-
-.bg-button-danger-bg {
-  background-color: #dc2626;
-}
-
-.color-button-danger-bg {
-  color: #dc2626;
-}
-
-.border-button-danger-bg {
-  border-color: #dc2626;
-}
-
-.fill-button-danger-bg svg {
-  fill: #dc2626;
-}
-
-.bg-button-danger-text {
+.bg-button-text-secondary {
   background-color: #ffffff;
 }
 
-.color-button-danger-text {
+.color-button-text-secondary {
   color: #ffffff;
 }
 
-.border-button-danger-text {
+.border-button-text-secondary {
   border-color: #ffffff;
 }
 
-.fill-button-danger-text svg {
+.fill-button-text-secondary svg {
   fill: #ffffff;
 }
 
-.bg-button-danger-hover {
-  background-color: #b91c1c;
+.bg-button-hover-secondary {
+  background-color: #1d4ed8;
 }
 
-.color-button-danger-hover {
-  color: #b91c1c;
+.color-button-hover-secondary {
+  color: #1d4ed8;
 }
 
-.border-button-danger-hover {
-  border-color: #b91c1c;
+.border-button-hover-secondary {
+  border-color: #1d4ed8;
 }
 
-.fill-button-danger-hover svg {
-  fill: #b91c1c;
+.fill-button-hover-secondary svg {
+  fill: #1d4ed8;
+}
+
+.bg-button-bg-tertiary {
+  background-color: #2563eb;
+}
+
+.color-button-bg-tertiary {
+  color: #2563eb;
+}
+
+.border-button-bg-tertiary {
+  border-color: #2563eb;
+}
+
+.fill-button-bg-tertiary svg {
+  fill: #2563eb;
+}
+
+.bg-button-text-tertiary {
+  background-color: #ffffff;
+}
+
+.color-button-text-tertiary {
+  color: #ffffff;
+}
+
+.border-button-text-tertiary {
+  border-color: #ffffff;
+}
+
+.fill-button-text-tertiary svg {
+  fill: #ffffff;
+}
+
+.bg-button-hover-tertiary {
+  background-color: #1d4ed8;
+}
+
+.color-button-hover-tertiary {
+  color: #1d4ed8;
+}
+
+.border-button-hover-tertiary {
+  border-color: #1d4ed8;
+}
+
+.fill-button-hover-tertiary svg {
+  fill: #1d4ed8;
 }
 
 .bg-status-success-bg {
@@ -691,7 +691,7 @@
   font-size: 0.875rem;
 }
 
-.fs-base {
+.fs-primary {
   font-size: 1rem;
 }
 
@@ -776,15 +776,15 @@
   --color-border-strong: #6b7280;
   --color-border-focus: #3b82f6;
   --color-border-danger: #ef4444;
-  --color-button-primary-bg: #2563eb;
-  --color-button-primary-text: #ffffff;
-  --color-button-primary-hover: #1d4ed8;
-  --color-button-secondary-bg: #f3f4f6;
-  --color-button-secondary-text: #111827;
-  --color-button-secondary-hover: #e5e7eb;
-  --color-button-danger-bg: #dc2626;
-  --color-button-danger-text: #ffffff;
-  --color-button-danger-hover: #b91c1c;
+  --color-button-bg-primary: #2563eb;
+  --color-button-text-primary: #ffffff;
+  --color-button-hover-primary: #1d4ed8;
+  --color-button-bg-secondary: #2563eb;
+  --color-button-text-secondary: #ffffff;
+  --color-button-hover-secondary: #1d4ed8;
+  --color-button-bg-tertiary: #2563eb;
+  --color-button-text-tertiary: #ffffff;
+  --color-button-hover-tertiary: #1d4ed8;
   --color-status-success-bg: #dcfce7;
   --color-status-success-border: #4ade80;
   --color-status-success-text: #15803d;
@@ -799,13 +799,13 @@
   --color-brand-dark: #111827;
   --color-brand-light: #f9fafb;
   /* === FONTS-FAMILY === */
-  --font-family-base: Roboto;
+  --font-family-primary: Roboto;
   --font-family-secondary: Inter;
   --font-family-accent: PlayfairDisplay;
   /* === FONT SIZES === */
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
+  --font-size-primary: 1rem;
   --font-size-md: 1.25rem;
   --font-size-lg: 1.5rem;
   --font-size-xl: 2rem;
@@ -1847,13 +1847,13 @@ select {
   }
 }
 html {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-primary);
   scroll-behavior: smooth;
 }
 
 body {
   font-size: clamp(16px, calc(16px + 0 * (100vw - 320px) / 1120), 16px);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-primary), sans-serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
 }

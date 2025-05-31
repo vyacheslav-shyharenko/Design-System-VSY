@@ -1,19 +1,14 @@
 @use "../abstracts" as v;
 
 html {
-  font-size: v.$var-font-size-base;
+  font-size: v.$var-fs-primary;
   scroll-behavior: smooth;
 }
 
 // Базові стилі для body
 body {
-  @include v.clamp(
-    v.get-token(breakpoint, xs),
-    v.get-token(breakpoint, wide),
-    16px,
-    16px
-  );
-  font-family: v.$font-family-base, sans-serif;
+  @include v.clamp(v.$get-bp-xs, v.$get-bp-wide, v.$get-fs-primary, 16px);
+  font-family: v.$var-ff-primary, sans-serif;
   background-color: v.$var-bg-primary;
   color: v.$var-text-primary;
 

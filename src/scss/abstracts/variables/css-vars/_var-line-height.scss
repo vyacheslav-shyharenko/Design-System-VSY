@@ -1,6 +1,6 @@
 @use "../../functions/f-get-var" as css;
 
-// $c-line-height-tight: fn.get-token(line-height, tight);
-// $c-line-height-base: fn.get-token(line-height, base);
-// $c-line-height-relaxed: fn.get-token(line-height, relaxed);
-// $c-line-height-loose: fn.get-token(line-height, loose);
+$var-lh-tight: css.get(line-height, tight);
+$var-lh-base: css.get(line-height, base);
+$var-lh-relaxed: css.get(line-height, relaxed);
+$var-lh-loose: css.get(line-height, loose);

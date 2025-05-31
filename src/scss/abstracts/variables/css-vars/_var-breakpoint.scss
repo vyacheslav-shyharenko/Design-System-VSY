@@ -1,8 +1,8 @@
 @use "../../functions/f-get-var" as css;
 
 // CSS Variables
-$var-breakpoint-xs: css.get(breakpoint, xs);
-$var-breakpoint-mobile: css.get(breakpoint, mobile);
-$var-breakpoint-tablet: css.get(breakpoint, tablet);
-$var-breakpoint-desktop: css.get(breakpoint, desktop);
-$var-breakpoint-wide: css.get(breakpoint, wide);
+$var-bp-xs: css.get(breakpoint, xs);
+$var-bp-mobile: css.get(breakpoint, mobile);
+$var-bp-tablet: css.get(breakpoint, tablet);
+$var-bp-desktop: css.get(breakpoint, desktop);
+$var-bp-wide: css.get(breakpoint, wide);
