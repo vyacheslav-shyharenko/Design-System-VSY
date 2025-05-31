@@ -1,4 +1,0 @@
-@use "../functions/f-get-var" as fn;
-
-$text-main: fn.get(color, text-main);
-$bg-main: fn.get(color, bg-main);

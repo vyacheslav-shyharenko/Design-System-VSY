@@ -1,0 +1,5 @@
+@use "../../functions/f-get-token" as tok;
+
+$font-family-base: tok.get-token(font-family, base);
+$font-family-secondary: tok.get-token(font-family, secondary);
+$font-family-accent: tok.get-token(font-family, accent);

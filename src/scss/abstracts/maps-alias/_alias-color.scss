@@ -1,56 +1,38 @@
 $ALIAS-COLOR: (
   // TEXT
-  text-main: text-main,
+  text-primary: text-primary,
   text-secondary: text-secondary,
   text-tertiary: text-tertiary,
-  text-inverted: text-inverted,
   text-link: text-link,
   text-link-hover: text-link-hover,
-  text-disabled: text-disabled,
-  text-danger: text-danger,
 
   // BACKGROUND
-  bg-main: bg-main,
-  bg-subtle: bg-subtle,
-  bg-muted: bg-muted,
-  bg-inverted: bg-inverted,
+  bg-primary: bg-primary,
+  bg-secondary: bg-secondary,
+  bg-tertiary: bg-tertiary,
   bg-overlay: bg-overlay,
   bg-hover: bg-hover,
-  bg-selected: bg-selected,
-  bg-disabled: bg-disabled,
 
   // BORDER
-  border-default: border-default,
-  border-subtle: border-subtle,
-  border-strong: border-strong,
-  border-focus: border-focus,
-  border-danger: border-danger,
+  border-primary: border-primary,
+  border-secondary: border-secondary,
+  border-tertiary: border-tertiary,
 
   // BUTTON
-  button-primary-bg: button-primary-bg,
-  button-primary-text: button-primary-text,
-  button-primary-hover: button-primary-hover,
+  // Primary
+  button-bg-primary: button-bg-primary,
+  button-text-primary: button-text-primary,
+  button-hover-primary: button-hover-primary,
 
-  button-secondary-bg: button-secondary-bg,
-  button-secondary-text: button-secondary-text,
-  button-secondary-hover: button-secondary-hover,
+  // Secondary
+  button-bg-secondary: button-bg-secondary,
+  button-text-secondary: button-text-secondary,
+  button-hover-secondary: button-hover-secondary,
 
-  button-danger-bg: button-danger-bg,
-  button-danger-text: button-danger-text,
-  button-danger-hover: button-danger-hover,
-
-  // STATUS
-  status-success-bg: status-success-bg,
-  status-success-border: status-success-border,
-  status-success-text: status-success-text,
-
-  status-warning-bg: status-warning-bg,
-  status-warning-border: status-warning-border,
-  status-warning-text: status-warning-text,
-
-  status-danger-bg: status-danger-bg,
-  status-danger-border: status-danger-border,
-  status-danger-text: status-danger-text,
+  // Tertiary
+  button-bg-tertiary: button-bg-tertiary,
+  button-text-tertiary: button-text-tertiary,
+  button-hover-tertiary: button-hover-tertiary,
 
   // BRAND
   brand-main: brand-main,

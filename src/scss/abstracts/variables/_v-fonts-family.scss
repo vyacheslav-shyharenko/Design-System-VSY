@@ -1,5 +1,0 @@
-@use "../functions/f-get-var" as fn;
-
-$font-family-base: fn.get(font-family, base);
-$font-family-secondary: fn.get(font-family, secondary);
-$font-family-accent: fn.get(font-family, accent);

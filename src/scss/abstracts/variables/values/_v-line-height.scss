@@ -1,0 +1,6 @@
+@use "../../functions/f-get-token" as tok;
+
+$c-line-height-tight: tok.get-token(line-height, tight);
+$c-line-height-base: tok.get-token(line-height, base);
+$c-line-height-relaxed: tok.get-token(line-height, relaxed);
+$c-line-height-loose: tok.get-token(line-height, loose);

@@ -1,7 +1,0 @@
-@use "../functions/f-get-var" as fn;
-
-$c-breakpoint-xs: fn.get(breakpoint, xs);
-$c-breakpoint-mobile: fn.get(breakpoint, mobile);
-$c-breakpoint-tablet: fn.get(breakpoint, tablet);
-$c-breakpoint-desktop: fn.get(breakpoint, desktop);
-$c-breakpoint-wide: fn.get(breakpoint, wide);

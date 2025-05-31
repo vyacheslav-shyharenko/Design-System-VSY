@@ -1,0 +1,5 @@
+@use "../../functions/f-get-token" as tok;
+
+$c-radius-sm: tok.get-token(radius, sm);
+$c-radius-md: tok.get-token(radius, md);
+$c-radius-lg: tok.get-token(radius, lg);

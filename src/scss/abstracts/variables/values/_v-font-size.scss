@@ -1,0 +1,3 @@
+@use "../../functions/f-get-token" as tok;
+
+$font-size-base: tok.get-token(font-size, base);
