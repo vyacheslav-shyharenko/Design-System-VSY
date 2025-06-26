@@ -3,11 +3,13 @@
 $TOKENS: (
   breakpoint: m.$BREAKPOINT,
   color: (
-    bg: m.$COLOR-BG,
-    text: m.$COLOR-TEXT,
-    button: m.$COLOR-BUTTON,
-    svg: m.$COLOR-ICON,
-    scroll: m.$SCROLL_BAR,
+    bg: m.$BG-COLOR,
+    border: m.$BORDER-COLOR,
+    button: m.$BUTTON-COLOR,
+    icon: m.$ICON-COLOR,
+    status: m.$STATUS-COLOR,
+    text: m.$TEXT-COLOR,
+    scroll: m.$SCROLL_BAR-COLOR,
   ),
   font-family: m.$FONT-FAMILY,
   font-size: m.$FONT-SIZE,

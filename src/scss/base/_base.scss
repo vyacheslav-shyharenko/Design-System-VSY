@@ -19,11 +19,11 @@ body {
   }
 
   & svg {
-    fill: $v-svg-primary;
+    fill: $v-icon-primary;
     transition: fill 200ms ease-in-out;
 
     &:hover {
-      fill: $v-svg-hover;
+      fill: $v-icon-hover;
     }
   }
 }
