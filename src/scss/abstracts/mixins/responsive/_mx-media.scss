@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "../variables/values" as v;
+@use "../../variables/values" as v;
 
 @mixin mq($bp: sm, $type: min, $is-retina: false) {
   @if map.has-key(v.$breakpoints, $bp) {

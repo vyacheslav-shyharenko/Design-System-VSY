@@ -1,0 +1,12 @@
+@use "../../functions/f-units" as u;
+
+$SPACING-GAP: (
+  none: u.rem(null),
+  xxs: u.rem(null),
+  xs: u.rem(null),
+  sm: u.rem(null),
+  md: u.rem(null),
+  lg: u.rem(null),
+  xl: u.rem(null),
+  xxl: u.rem(null),
+);

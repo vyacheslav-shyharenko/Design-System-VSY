@@ -1,46 +1,53 @@
 @use "../functions/f-units" as r;
-
-@use "../mixins/mx-generate-vars" as mx;
-
+@use "../mixins/utils/mx-generate-vars" as mx;
 @use "../variables" as v;
 
 :root {
+  // === BREAKPOINTS ===
   @each $key, $value in v.$breakpoints {
-    --breakpoint-#{$key}: #{$value};
+    @if $value != null and $value != "" {
+      --breakpoint-#{$key}: #{$value};
+    }
   }
 
-  /* === FONTS-FAMILY === */
-
+  // === FONT FAMILY ===
   @each $key, $value in v.$font-families {
-    --font-family-#{$key}: #{$value};
+    @if $value != null {
+      --font-family-#{$key}: #{$value};
+    }
   }
 
-  /* === FONT SIZES === */
+  // === FONT SIZES ===
   @each $key, $value in v.$font-sizes {
-    --font-size-#{$key}: #{$value};
+    @if $value != null {
+      --font-size-#{$key}: #{$value};
+    }
   }
 
-  /* === FONT WEIGHTS === */
+  // === FONT WEIGHTS ===
   @each $key, $value in v.$font-weights {
-    --font-weight-#{$key}: #{$value};
+    @if $value != null {
+      --font-weight-#{$key}: #{$value};
+    }
   }
 
-  /* === LINE HEIGHTS === */
+  // === LINE HEIGHTS ===
   @each $key, $value in v.$line-heights {
-    --line-height-#{$key}: #{$value};
+    @if $value != null {
+      --line-height-#{$key}: #{$value};
+    }
   }
 
-  /* === SPACINGS === */
-  @each $key, $value in v.$spacing {
-    --spacing-#{$key}: #{$value};
-  }
+  // === SPACING ===
+  @include mx.generate-css-vars(v.$spacing, "spacing");
 
-  /* === RADIUS === */
+  // === RADIUS ===
   @each $key, $value in v.$radii {
-    --radius-#{$key}: #{$value};
+    @if $value != null {
+      --radius-#{$key}: #{$value};
+    }
   }
 
-  /* === COLORS === */
-
+  // === COLORS ===
   @include mx.generate-css-vars(v.$colors, "color");
 }

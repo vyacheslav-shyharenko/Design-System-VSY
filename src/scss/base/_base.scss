@@ -20,7 +20,8 @@ body {
 
   & svg {
     fill: $v-icon-primary;
-    transition: fill 200ms ease-in-out;
+
+    @include transition-fill;
 
     &:hover {
       fill: $v-icon-hover;

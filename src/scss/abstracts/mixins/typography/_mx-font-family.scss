@@ -1,6 +1,6 @@
-@use "../tokens/t-tokens" as t;
+@use "../../tokens/t-tokens" as t;
 
-@use "../functions/f-get-token" as fn;
+@use "../../functions/f-get-token" as fn;
 
 $map: fn.get(font-weight);
 
