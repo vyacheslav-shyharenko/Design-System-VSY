@@ -1,15 +1,1 @@
-@use "../abstracts" as u;
-
-// $l-width-xs: u.get(breakpoint, xs);
-// $l-width-mobile: u.get(breakpoint, mobile);
-// $l-width-tablet: u.get(breakpoint, tablet);
-// $l-width-desktop: u.get(breakpoint, desktop);
-// $l-width-wide: u.get(breakpoint, wide);
-
-// .layout {
-//   // min-width: u.$c-breakpoint-mobile;
-
-//   @include u.respond-to(desktop) {
-//     display: grid;
-//   }
-// }
+@use "../abstracts" as *;

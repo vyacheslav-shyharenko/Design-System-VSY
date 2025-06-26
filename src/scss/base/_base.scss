@@ -1,24 +1,29 @@
-@use "../abstracts" as v;
+@use "../abstracts" as *;
 
 html {
-  font-size: v.$var-fs-primary;
+  font-size: $v-fs-base;
   scroll-behavior: smooth;
 }
 
-// Базові стилі для body
 body {
-  @include v.clamp(v.$bp-xs, v.$bp-wide, v.$fs-primary, 16px);
-  font-family: v.$var-ff-primary, sans-serif;
-  background-color: v.$var-bg-primary;
-  color: v.$var-text-primary;
+  // @include clamp($bp-xs, $bp-desktop, $fs-base, 14px);
+
+  font-family: $v-ff-primary, sans-serif;
+  font-weight: $v-fw-regular;
+  line-height: $v-lh-base;
+  color: $v-text-primary;
+  background-color: $v-bg-primary;
 
   & button {
-    font-family: inherit;
-    color: currentColor;
     cursor: pointer;
   }
 
-  & summary {
-    list-style-type: none;
+  & svg {
+    fill: $v-svg-primary;
+    transition: fill 200ms ease-in-out;
+
+    &:hover {
+      fill: $v-svg-hover;
+    }
   }
 }

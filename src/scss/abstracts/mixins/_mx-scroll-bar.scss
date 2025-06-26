@@ -1,3 +1,5 @@
+@use "../functions/f-get-token" as fn;
+
 @mixin scroll-bar {
   &::-webkit-scrollbar {
     width: 14px;
@@ -13,13 +15,13 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: fn.get-color("light-secondary");
+    background-color: fn.get(color, "scroll.primary");
     background-clip: content-box;
     border: 5px solid transparent;
     border-radius: 100px;
 
     &:hover {
-      background-color: fn.get-color("accent-primary");
+      background-color: fn.get(color, "scroll.secondary");
     }
   }
 }
