@@ -1,5 +1,5 @@
 {
-  "name": "my-template",
+  "name": "design-system",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,5 +19,10 @@
   },
   "dependencies": {
     "body-scroll-lock": "^4.0.0-beta.0"
+  },
+  "author": {
+    "name": "Vyacheslav Shyharenko",
+    "description": "Personal design system with SCSS, Vite and utility plugins",
+    "license": "MIT"
   }
 }
