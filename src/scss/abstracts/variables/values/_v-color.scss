@@ -3,6 +3,8 @@
 // Повна мапа кольорів
 $colors: token.get(color);
 
+$border-colors: token.get(color, "border");
+
 // Звичайні SCSS-значення
 
 // Backround
@@ -11,6 +13,12 @@ $bg-secondary: token.get(color, "bg.secondary", css);
 $bg-tertiary: token.get(color, "bg.tertiary", css);
 $bg-accent: token.get(color, "bg.accent", css);
 $bg-overlay: token.get(color, "bg.overlay", css);
+
+// Border
+$border-primary: token.get(color, "border.primary", css);
+$border-secondary: token.get(color, "border.secondary", css);
+$border-tertiary: token.get(color, "border.tertiary", css);
+$border-accent: token.get(color, "border.accent", css);
 
 // Button
 $btn-primary: token.get(color, "button.primary", css);
