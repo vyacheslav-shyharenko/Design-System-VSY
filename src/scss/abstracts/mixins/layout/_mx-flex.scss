@@ -1,12 +1,17 @@
-@use "../../functions/f-units" as u;
+@use 'sass:map';
 
-// 🔧 Основний міксин з усіма параметрами
+@use '../../functions/f-units' as u;
+
+@use '../../maps' as m;
+
 @mixin flex(
   $justify: null,
   $align: null,
   $direction: null,
   $wrap: null,
-  $gap: null
+  $gap: null,
+  $row-gap: null,
+  $column-gap: null
 ) {
   display: flex;
 
@@ -26,8 +31,20 @@
     flex-wrap: $wrap;
   }
 
+  // Якщо передано один gap — застосувати до обох
   @if $gap != null {
-    gap: u.rem($gap);
+    $value: map.get(m.$SPACING-GAP, $gap);
+    row-gap: $value;
+    column-gap: $value;
+  }
+
+  // Якщо задані окремо — вони мають пріоритет
+  @if $row-gap != null {
+    row-gap: map.get(m.$SPACING-GAP, $row-gap);
+  }
+
+  @if $column-gap != null {
+    column-gap: map.get(m.$SPACING-GAP, $column-gap);
   }
 }
 

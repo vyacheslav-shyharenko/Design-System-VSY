@@ -1,4 +1,4 @@
-@use "../maps" as m;
+@use '../maps' as m;
 
 $TOKENS: (
   breakpoint: m.$BREAKPOINT,
@@ -22,7 +22,7 @@ $TOKENS: (
 
   spacing: (
     gap: m.$SPACING-GAP,
-    padding: m.$SPACING-PADDING,
+    padding: m.$SPACING_PADDING,
     margin: m.$SPACING-MARGIN,
     layout: m.$SPACING-LAYOUT,
   ),
@@ -34,5 +34,6 @@ $TOKENS: (
     background-color: m.$TRANSITION-BG-COLOR,
     opacity: m.$TRANSITION-OPACITY,
     transform: m.$TRANSITION-TRANSFORM,
+    border-trans: m.$TRANSITION-BORDER,
   ),
 );

@@ -1,4 +1,4 @@
-@use "../../variables" as v;
+@use '../../variables/values' as v;
 
 @mixin transition-color {
   transition: v.$propertyColor v.$durationColor v.$timing-functionColor;
@@ -10,6 +10,10 @@
 
 @mixin transition-all {
   transition: v.$propertyAll v.$durationAll v.$timing-functionAll;
+}
+
+@mixin transition-border {
+  transition: v.$propertyBorder v.$durationBorder v.$timing-functionBorder;
 }
 
 @mixin transition-fill {
