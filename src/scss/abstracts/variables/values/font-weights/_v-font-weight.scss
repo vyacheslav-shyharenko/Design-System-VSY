@@ -1,6 +1,6 @@
-@use '../../../functions/f-get-token' as token;
+@use "../../../functions/f-get-token" as token;
 
-@use '../../../maps' as m;
+@use "../../../maps" as m;
 
 $font-weight-map: m.$FONT-WEIGHT;
 
