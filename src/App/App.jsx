@@ -1,11 +1,8 @@
-// import { useState } from "react";
-
 import styles from './App.module.scss';
-
 function App() {
   return (
     <>
-      <h1 className={styles.asd}> HELOWWWW</h1>
+      <h1 className={styles['app']}>**_**</h1>
     </>
   );
 }

@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "watch": "sass src/main.scss src/style.css --watch --no-source-map"
+    "watch": "sass src/main.scss src/style.css --watch --no-source-map",
+    "generate": "plop"
   },
   "dependencies": {
     "body-scroll-lock": "^4.0.0-beta.0",
@@ -26,6 +27,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "plop": "^4.0.1",
     "postcss": "^8.5.6",
     "postcss-sort-media-queries": "^5.2.0",
     "sass": "^1.91.0",

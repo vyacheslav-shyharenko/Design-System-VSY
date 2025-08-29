@@ -1,0 +1,21 @@
+{{!-- Import styles depending on choice --}}
+{{#if (eq style "scss")}}
+import styles from './{{pascalCase name}}.module.scss';
+{{/if}}
+{{#if (eq style "css")}}
+import './{{pascalCase name}}.css';
+{{/if}}
+
+const {{pascalCase name}} = ({props}) => {
+  return (
+    {{#if (eq style "scss")}}
+    <div className={styles['{{kebabCase name}}']}>
+    {{else}}
+    <div className="{{kebabCase name}}">
+    {{/if}}
+      {{pascalCase name}}
+    </div>
+  );
+};
+
+export default {{pascalCase name}};
