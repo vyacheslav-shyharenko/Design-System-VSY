@@ -4,53 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Vite + React</title>
   </head>
   <body>
-    <div id="layout">
-      <h1 class="loading-text">Let's begin creating...</h1>
-    </div>
-    <script type="module" src="./js/main.js"></script>
+    <div id="root"></div>
+
+    <script type="module" src="/main.jsx"></script>
   </body>
-
-  <style>
-    html,
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    html {
-      height: 100%;
-    }
-    body {
-      background: #222;
-    }
-
-    .loading-text {
-      place-self: center;
-      background: linear-gradient(
-          90deg,
-          rgb(152, 152, 154),
-          rgb(86, 198, 198),
-          rgb(112, 112, 150)
-        ) -100%/ 200%;
-      /* being excessively careful with compat,
-	 * though this has been supported unprefixed and
-	 * in the shorthand across major browsers for a while */
-      -webkit-background-clip: text;
-      background-clip: text;
-      /* use color, don't use -webkit-text-fill-color anymore,
-	 * was meant to solve a problem we haven't had in years */
-      color: transparent;
-      font-size: 55px;
-      animation: shimmer 1s linear infinite;
-    }
-
-    @keyframes shimmer {
-      to {
-        background-position: 100%;
-      }
-    }
-  </style>
 </html>
