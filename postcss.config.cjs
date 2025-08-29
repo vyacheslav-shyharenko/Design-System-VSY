@@ -1,6 +1,1 @@
-module.exports = {
-  plugins: {
-    autoprefixer: {},
-    'postcss-sort-media-queries': {}
-  }
-};
+module.exports = { plugins: { autoprefixer: {}, 'postcss-sort-media-queries': {} } };
